@@ -25,7 +25,10 @@ abstract class Base {
   void bar() => print('bar');
 }
 
-class Subclass extends Base {
+class Subclass implements Base {
   @override 
   void foo() => print('foo');
+
+  @override 
+  void bar() => print('bar');
 }
